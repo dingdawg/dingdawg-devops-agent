@@ -1,0 +1,73 @@
+{
+  "name": "dingdawg-devops-agent",
+  "version": "2.0.10",
+  "description": "Governance receipts for AI agents — DevOps deployment checks, incident response, and infra review, with signed audit receipts for every action, compliant with EU AI Act, Colorado AI Act (SB 24-205), and NIST AI RMF.",
+  "main": "dist/index.js",
+  "bin": {
+    "dingdawg-devops-agent": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "prepublishOnly": "bash ../../ip-gate.sh ./dist"
+  },
+  "keywords": [
+    "mcp",
+    "devops",
+    "deployment",
+    "monitoring",
+    "infrastructure",
+    "incident-analysis",
+    "runbook",
+    "cost-optimization",
+    "governance",
+    "dingdawg",
+    "claude-code",
+    "cursor",
+    "ai-agent",
+    "sre",
+    "platform-engineering",
+    "governance-receipts",
+    "receipts",
+    "audit-trail",
+    "tamper-proof",
+    "ai-governance",
+    "responsible-ai",
+    "llm-governance",
+    "signed-receipts",
+    "ai-agents",
+    "eu-ai-act",
+    "compliance",
+    "model-context-protocol"
+  ],
+  "author": "Innovative Systems Global <support@dingdawg.com>",
+  "license": "BUSL-1.1",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dingdawg/dingdawg-devops-agent"
+  },
+  "homepage": "https://dingdawg.com/marketplace/devops-agent",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "mcpName": "io.github.dingdawg/dingdawg-devops-agent",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ]
+}
