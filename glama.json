@@ -1,5 +1,5 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
   "name": "io.github.dingdawg/dingdawg-devops-agent",
   "description": "DevOps AI. Deploy checks, incident analysis, infra audit. Learns from past failures.",
   "repository": {
